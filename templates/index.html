@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styling (if needed from navbar.html) */
+        nav {
+            background-color: #007bff; /* Blue color for navbar */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700; /* Gold color on hover */
+        }
+
+        /* Main content styling */
+        main {
+            padding: 40px 20px;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+        }
+
+        h2 {
+            color: #007bff; /* Blue color for headings */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive behavior */
+        @media (max-width: 768px) {
+            main {
+                padding: 20px;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <main class="container">
+        <section>
+            <h2>About Us</h2>
+            <p>
+                Welcome to [College Name], where we strive to provide the highest quality education and create a nurturing environment
+                for students to thrive. Join us to shape your future!
+            </p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                To foster innovation, promote critical thinking, and equip students with skills for a rapidly evolving world.
+            </p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                Email: info@college.edu | Phone: +1 (555) 123-4567
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 [College Name]. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Optional Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
